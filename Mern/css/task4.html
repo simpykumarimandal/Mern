@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        width: 400px;
+        height: 300px;
+        border: 1px solid #ccc;
+        position: relative;
+        padding: 20px;
+        background-color: white;
+      }
+
+      .title {
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .subtitle {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .sidenav {
+        position: absolute;
+        left: 0;
+        top: 100px;
+        width: auto;
+      }
+
+      .nav-btn {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+        position: relative;
+        cursor: pointer;
+        transition: width 0.3s ease;
+        overflow: hidden;
+      }
+
+      .nav-btn:hover {
+        width: 200px;
+      }
+
+      .green-btn {
+        background-color: #00a67e;
+        border-radius: 3px;
+      }
+
+      .blue-btn {
+        background-color: #3498db;
+        border-radius: 3px;
+      }
+
+      .red-btn {
+        background-color: #e74c3c;
+        border-radius: 3px;
+      }
+
+      .gray-btn {
+        background-color: #495057;
+        border-radius: 3px;
+      }
+
+      .nav-btn span {
+        color: white;
+        position: absolute;
+        left: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+        white-space: nowrap;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .nav-btn:hover span {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">Hoverable Sidenav Buttons</h2>
+      <p class="subtitle">
+        Hover over the buttons in the left side navigation to open them.
+      </p>
+
+      <div class="sidenav">
+        <div class="nav-btn green-btn">
+          <span>Green Button</span>
+        </div>
+        <div class="nav-btn blue-btn">
+          <span>Blue Button</span>
+        </div>
+        <div class="nav-btn red-btn">
+          <span>Red Button</span>
+        </div>
+        <div class="nav-btn gray-btn">
+          <span>Gray Button</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
